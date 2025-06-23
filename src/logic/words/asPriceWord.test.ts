@@ -1,25 +1,25 @@
 import { given, then, when } from 'test-fns';
 
-import { Currency } from '../domain/constants/Currency';
-import { Price } from '../domain/objects/Price';
-import { castPriceToLocaleString } from './asPriceWord';
+import { Currency } from '../../domain/constants/Currency';
+import { Price } from '../../domain/objects/Price';
+import { asPriceWord } from './asPriceWord';
 
-describe('castPriceToLocaleString', () => {
+describe('asPriceWord', () => {
   given('a $821.12 price', () => {
     const price = new Price({ amount: 82112, currency: Currency.USD });
     when('casting', () => {
       then('it should return $821.12', () => {
-        expect(castPriceToLocaleString(price)).toBe('$821.12');
+        expect(asPriceWord(price)).toBe('$821.12');
       });
     });
     when('casting with option.cents enabled', () => {
       then('it should return $821.12', () => {
-        expect(castPriceToLocaleString(price, { cents: true })).toBe('$821.12');
+        expect(asPriceWord(price, { cents: true })).toBe('$821.12');
       });
     });
     when('casting with option.cents disabled', () => {
       then('it should return $821', () => {
-        expect(castPriceToLocaleString(price, { cents: false })).toBe('$821');
+        expect(asPriceWord(price, { cents: false })).toBe('$821');
       });
     });
   });

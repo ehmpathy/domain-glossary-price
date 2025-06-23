@@ -1,8 +1,8 @@
-import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
+import { UnexpectedCodePathError } from 'helpful-errors';
 
-import { Price } from '../domain/objects/Price';
+import { Price } from '../../domain/objects/Price';
 
-export const sumPrices = (prices: Price[]) => {
+export const calcPriceSummation = (prices: Price[]): Price => {
   // if no prices, throw error, invalid request
   const priceFirst = prices[0];
   if (!priceFirst)
@@ -31,3 +31,5 @@ export const sumPrices = (prices: Price[]) => {
     currency: priceFirst.currency,
   });
 };
+
+export { calcPriceSummation as sumPrices, calcPriceSummation as calcPriceSum };

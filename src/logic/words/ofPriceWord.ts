@@ -1,6 +1,6 @@
 import { BadRequestError, UnexpectedCodePathError } from '@ehmpathy/error-fns';
 
-import { Price } from '../domain/objects/Price';
+import { Price } from '../../domain/objects/Price';
 
 /**
  * .what = extracts the price out of word it is defined in
@@ -21,3 +21,5 @@ export const ofPriceWord = (word: string): Price => {
   const amount = dollars * 100 + cents;
   return new Price({ amount: amount, currency: 'USD' });
 };
+
+export { ofPriceWord as castWordToPrice };

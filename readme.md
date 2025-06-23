@@ -28,7 +28,6 @@ npm install domain-glossary-price
 
 # use
 
-
 ### `Price` = declare a price
 
 per the standard laid out by Stripe, price.amounts are declared in the smallest unit of the currency
@@ -42,6 +41,8 @@ const price = new Price({ amount: 50_00, currency: 'USD' })
 const price = new Price({ amount: 37_00, currency: Currency.USD })
 ```
 
+
+## words
 
 ### `ofPriceWord` = cast from words to dobjs
 
@@ -75,4 +76,46 @@ you can use the `options` input to further customize. for example, drop the cent
 const price: string = asPriceWord(new Price({ 50_37, currency: 'USD' }), { cents: false })
 
 expect(price).toEqual('$50')
+```
+
+## calcs
+
+### `calcPriceSummation` = `sumPrices` = summate prices
+
+add prices together
+
+```ts
+const priceSum = sumPrices([priceA, priceB, priceC])
+```
+
+### `calcPriceSubtraction` = `subPrices` = subtract prices
+
+subtract one price from another
+
+```ts
+const priceDiff = subPrices([priceA, priceB])
+```
+
+### `calcPriceMultiplication` = `multiplyPrice` = multiply a price
+
+multiply a price by a scalar
+
+```ts
+const price5xed = multiplyPrice(price, 5)
+```
+
+### `calcPriceDivision` = `dividePrice` = divide a price
+
+divide a price by a scalar
+
+```ts
+const priceHalfed = dividePrice(price, 2)
+```
+
+### `calcPriceStdev` = calc standard deviation of prices
+
+calculate the standard deviation of a list of prices
+
+```ts
+const priceStdev = calcPriceStdev([priceA, priceB, priceC])
 ```

@@ -48,7 +48,6 @@
   },
   "dependencies": {
     "@ehmpathy/error-fns": "1.0.2",
-    "domain-glossaries": "1.0.0",
     "domain-objects": "0.24.2",
     "helpful-errors": "1.3.8",
     "joi": "17.13.3",

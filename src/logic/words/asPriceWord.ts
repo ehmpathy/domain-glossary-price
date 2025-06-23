@@ -1,6 +1,6 @@
-import { Price } from '../domain/objects/Price';
+import { Price } from '../../domain/objects/Price';
 
-export const castPriceToLocaleString = (
+export const asPriceWord = (
   price: Price,
   options: { cents?: boolean } = { cents: true },
 ): string => {
@@ -12,4 +12,4 @@ export const castPriceToLocaleString = (
   return string;
 };
 
-export { castPriceToLocaleString as asPriceInWord };
+export { asPriceWord as castPriceToWord };

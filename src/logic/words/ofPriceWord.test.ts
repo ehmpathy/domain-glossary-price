@@ -1,7 +1,7 @@
 import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
 import { getError } from 'test-fns';
 
-import { Price } from '../domain/objects/Price';
+import { Price } from '../../domain/objects/Price';
 import { ofPriceWord } from './ofPriceWord';
 
 describe('ofPriceWord', () => {

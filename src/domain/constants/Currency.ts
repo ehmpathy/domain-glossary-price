@@ -1,3 +1,5 @@
+import { createIsOfEnum } from 'type-fns';
+
 /**
  * an enum of ISO 4217 currency codes
  *
@@ -9,3 +11,5 @@
 export enum Currency {
   USD = 'USD',
 }
+
+export const isOfCurrency = createIsOfEnum(Currency);
