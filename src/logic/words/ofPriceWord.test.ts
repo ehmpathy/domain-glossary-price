@@ -1,4 +1,4 @@
-import { UnexpectedCodePathError } from '@ehmpathy/error-fns';
+import { UnexpectedCodePathError } from 'helpful-errors';
 import { getError } from 'test-fns';
 
 import { Price } from '../../domain/objects/Price';
