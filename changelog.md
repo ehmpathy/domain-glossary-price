@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ehmpathy/domain-glossary-price/compare/v1.0.0...v1.0.1) (2025-09-20)
+
+
+### Bug Fixes
+
+* **deps:** use peer dep of dobjs package ([6f63f04](https://github.com/ehmpathy/domain-glossary-price/commit/6f63f04ffe6f195cea2c8aa9bdf01dcbc9e25591))
+
 ## 1.0.0 (2025-06-23)
 
 
