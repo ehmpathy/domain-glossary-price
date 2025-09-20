@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ehmpathy/domain-glossary-price/compare/v1.0.1...v1.0.2) (2025-09-20)
+
+
+### Bug Fixes
+
+* **deps:** bump peer dep range on dobjs ([53dc258](https://github.com/ehmpathy/domain-glossary-price/commit/53dc258ea4e80999a9417a460e6254b832875bc4))
+
 ## [1.0.1](https://github.com/ehmpathy/domain-glossary-price/compare/v1.0.0...v1.0.1) (2025-09-20)
 
 
