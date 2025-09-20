@@ -52,7 +52,7 @@
     "type-fns": "^1.19.0"
   },
   "peerDependencies": {
-    "domain-objects": "^0.24.2"
+    "domain-objects": ">=0.24.2"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
